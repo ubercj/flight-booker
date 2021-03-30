@@ -1,24 +1,3 @@
-# README
+This is a project called "Flight Booker" from the full stack Ruby on Rails curriculum from The Odin Project. You can find the project here: https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/building-advanced-forms.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The main focus of this assignment is setting up advanced forms in rails, but there's plenty of opportunity to hone my skills with Active Record associations, etc.
