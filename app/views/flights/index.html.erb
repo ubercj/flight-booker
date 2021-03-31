@@ -34,7 +34,8 @@
 
       <div class="search-form">
         <h1>Select a flight:</h1>
-        <%= form_with url: "/flights", method: :get do |form| %>
+        <%= form_with url: new_booking_path, scope: :selection,  method: :get do |form| %>
+          <%= form.hidden_field :no_of_passengers, value: params[:no_of_passengers] %>
           <div class="form-field">
             <%= form.collection_radio_buttons :flight_selection, @flights.order(:date), :id, :id do |b| %>
               <p>Flight #<%= b.label %><%= b.radio_button %></p>
