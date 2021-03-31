@@ -3,7 +3,7 @@ class Flight < ApplicationRecord
   belongs_to :destination_port, class_name: "Airport"
 
   def flight_info
-    "Departs from #{origin_port.code} on #{formatted_date}.\nArrives at #{destination_port.code}.\nTotal flight time is #{duration} minutes."
+    "Book this flight"
   end
 
   def formatted_date
