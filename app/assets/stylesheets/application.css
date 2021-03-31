@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ :root {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .flex-container {
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .feed {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .flight-container {
+   border: 1px solid black;
+   padding: 3px;
+   margin: 5px;
+ }
+
+ .search-bar {
+   display: flex;
+   flex-direction: column;
+   align-content: space-around;
+ }
