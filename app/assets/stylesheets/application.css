@@ -17,6 +17,21 @@
    font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
+ .h1 {
+   font-size: large;
+ }
+
+ .home {
+   font-size: xx-large;
+ }
+
+ .navbar {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   border-bottom: 2px solid black;
+ }
+
  .flex-container {
    display: flex;
    justify-content: space-evenly;
@@ -28,13 +43,25 @@
  }
 
  .flight-container {
+   display: flex;
+   align-items: center;
    border: 1px solid black;
    padding: 3px;
    margin: 5px;
  }
 
+ .booking-container {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 5px;
+}
+
  .search-bar {
    display: flex;
    flex-direction: column;
    align-content: space-around;
+ }
+
+ .radio-label {
+   white-space: pre-line;
  }

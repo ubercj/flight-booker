@@ -6,7 +6,7 @@
       <%= form.hidden_field :no_of_passengers, value: params[:selection][:no_of_passengers] %>
       <%= form.hidden_field :flight_id, value: params[:selection][:flight_selection] %>
       
-      <div class="flight-container">
+      <div class="booking-container">
         <p>Departing: <%= @flight_selection.origin_port.code %></p>
         <p>Arriving: <%= @flight_selection.destination_port.code %></p>
         <p>Flight date: <%= @flight_selection.formatted_date %></p>
