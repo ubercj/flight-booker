@@ -51,17 +51,20 @@
    flex-direction: column;
  }
 
- .flight-container {
+ .booking-container {
    background-color: rgb(190, 190, 190);
    display: flex;
+   flex-direction: column;
    align-items: center;
    border: 1px solid black;
    padding: 3px;
    margin: 5px;
  }
 
- .booking-container {
+ .flight-container {
   background-color: rgb(190, 190, 190);
+  display: flex;
+  align-items: center;
   border: 1px solid black;
   padding: 3px;
   margin: 5px;
