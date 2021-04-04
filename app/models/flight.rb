@@ -4,6 +4,9 @@ class Flight < ApplicationRecord
   has_many :bookings
   has_many :passengers, through: :bookings
 
+  def formatted_date
+    date.strftime("%m/%d/%Y")
+  end
 
   def flight_details
     "Departing: #{self.origin_port.code}\n
