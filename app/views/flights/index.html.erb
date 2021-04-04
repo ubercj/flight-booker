@@ -1,9 +1,13 @@
 <div class="flex-container">
 
-    <%= render "search_form" %>
+  <%= render "search_form" %>
 
-    <% unless params[:commit].nil? %>
+  <% if params[:commit] %>
+    <% if @flights.empty? %>
+      <p>Sorry, no results matched your search.</p>
+    <% else %>
       <%= render "feed" %>
     <% end %>
+  <% end %>
     
 </div>

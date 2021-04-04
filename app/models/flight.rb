@@ -11,8 +11,4 @@ class Flight < ApplicationRecord
     Flight date: #{self.formatted_date}\n
     Flight duration: #{self.duration} minutes"
   end
-
-  def formatted_date
-    date.strftime("%m/%d/%Y")
-  end
 end

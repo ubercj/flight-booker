@@ -5,6 +5,8 @@ class FlightsController < ApplicationController
     else
       @flights = Flight.where("origin_port_id = ? AND destination_port_id = ? AND date = ?", flight_params[:origin_port_id], flight_params[:destination_port_id], flight_params[:date])
     end
+
+    @flight_dates = Flight.all.map { |flight| flight.date.strftime("%m/%d/%Y") }.uniq
   end
 
   def show

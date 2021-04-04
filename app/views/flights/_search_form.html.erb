@@ -11,7 +11,7 @@
       </div>
       <div class="form-field">
         <%= form.label :date, "DATE" %>
-        <%= form.collection_select :date, Flight.order(:date), :date, :formatted_date %>
+        <%= form.select :date, @flight_dates %>
       </div>
       <div class="form-field">
         <%= form.label :no_of_passengers, "Passengers" %>
